@@ -98,6 +98,7 @@ nav{
     font-size: 40px;
     color: rgb(36, 100, 148);
     text-align: center;
+    justify-content: center;
 }
 .audiencia img{
     width: 95%;
@@ -179,6 +180,9 @@ nav{
     text-align: center;
 
 }
+.donde{
+    color: rgb(172, 125, 25);
+}
 /* botones */
 .botones a{
     text-decoration: none;
@@ -196,4 +200,12 @@ nav{
 .footer a{
     text-decoration: none;
     color: white;
+}
+
+
+/* dispositivo pequeño */
+@media(max-width: 480px){
+    .botones a{
+        margin-top: 15%;
+    }
 }
