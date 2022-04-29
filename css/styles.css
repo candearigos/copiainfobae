@@ -7,6 +7,19 @@
 .boton{
     background-color: white;
 }
+/* TARIFARIO */
+.tarifario a{
+    text-decoration: none;
+    background-color:white;
+    color: rgb(32, 135, 200);
+    border-radius: 5px;
+    padding: 8%;
+    font-size: 20px;
+    font-family:'Crimson Pro', serif;
+    position: absolute;
+    z-index: 3;
+    /* margin-left: 70%; */
+}
 .titulo h1{
     margin-top: 15%;
     position: absolute;
@@ -45,6 +58,7 @@ nav{
 }
 .header a{
     margin-left: 45%;
+    font-family: 'Crimson Pro', serif;
 }
 .navbar-brand{
     justify-content: center;
@@ -72,7 +86,7 @@ nav{
     font-family: 'Ramabhadra', sans-serif;
 }
 .subtitulo h3{
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
 }
@@ -83,9 +97,10 @@ nav{
 .iconos i{
     font-size: 40px;
     color: rgb(36, 100, 148);
+    text-align: center;
 }
 .audiencia img{
-    width: 90%;
+    width: 95%;
 }
 .audiencia h3{
     font-size: 30px;
@@ -94,7 +109,7 @@ nav{
     margin-top: -1%;
 }
 .audiencia h2{
-    font-size: 60px;
+    font-size: 50px;
     color: rgb(36, 100, 148);
     font-family: 'Ramabhadra', sans-serif;
 }
@@ -103,10 +118,18 @@ nav{
     color: gray;
     margin-top: -2%;
 }
+.googleanalytics p{
+    font-size: 15px;
+}
+.googleanalytics img{
+    width: 25%;
+    margin-left: 75%;
+    margin-top: -8%;
+}
 .usuarios{
     margin-top: 10%;
 }
-.usuarios img{
+.usuarios img, .socialmedia img{
     width: 100%;
 }
 .box{
@@ -114,7 +137,7 @@ nav{
     color: white;
 }
 .box h2{
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 60px;
     font-family: 'Ramabhadra', sans-serif;
 }
@@ -122,42 +145,37 @@ nav{
     width: 70%;
     margin-left: 15%;
 }
-.redes{
-    background:  linear-gradient(rgb(0, 0, 0), rgb(56, 56, 56), black);
+.iconig{
+    font-size: 30px ;
+}
+
+
+/* nuestra audiencia */
+.nuestraaudiencia{
+    background-color:rgb(36, 100, 148);
     color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
+    padding: 5%;
 }
-.redes h3{
-    padding-top: 10%;
-    font-family: 'Ramabhadra', sans-serif;
+.nuestraaudiencia h3{
+    text-align: center;
 }
-.redes h2{
-    font-family: 'Ramabhadra', sans-serif;
+.nuestraaudiencia i{
+    text-align: center;
+    font-size: 40px;
 }
-.redes p{
-    margin-bottom: 7%;
+.nse{
+    text-align: center;
+
 }
-.icona i, .iconb i, .iconc i{
-    font-size: 30px;
-    margin-top: 15%;
-    margin-bottom: 3%;
-}
-.icona, .iconb, .iconc{
-    width: 90%;
-    margin-right: 2%;
-    margin-top: 15%;
-    padding-bottom: 5%;
-}
-.icona{
-    background:  linear-gradient(rgb(0, 94, 255), rgb(0, 183, 255));
-}
-.iconb{
-    background:  linear-gradient(rgb(255, 136, 0), rgb(200, 0, 255));
-}
-.iconc{
-    background:  linear-gradient(rgb(0, 208, 255), rgb(128, 210, 242));
+/* botones */
+.botones a{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    padding: 8%;
+    font-size: 20px;
+    font-family:'Crimson Pro', serif;
 }
 .footer{
     background-color: rgb(40, 40, 40);
