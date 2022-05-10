@@ -1,5 +1,4 @@
-
-.body{
+body{
     margin:0;
     padding:0;
     overflow-x: hidden;
@@ -20,19 +19,28 @@
     z-index: 3;
     /* margin-left: 70%; */
 }
-.titulo h1{
-    margin-top: 15%;
+.video h1{
+    font-family: 'Ramabhadra', sans-serif;
     position: absolute;
     z-index: 2;
     color: white;
-    margin-left: 2%;
+    top: 140px;
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 10px;
+}
+.video {
+    display: block;
+    height: 444px;
+    position: relative;
 }
 video{
     position: absolute;
-    top: -40%;
+    top: 0;
     left: 0;
     bottom: -5%;
     width: 100%;
+    height: 444px;
     object-fit: cover;
     opacity: 80%;
 }
@@ -67,20 +75,20 @@ nav{
     opacity: 0;
     transition: all 1s;
 }
-.dispositivos img{
-    width: 50%;
+.dispositivos {
     position: absolute;
-    margin-left: 50%;
-    margin-top: 10%;
+    bottom: -20%;
+    text-align: center;
+}
+.dispositivos img{
+    width: 100%;
+    max-width: 456px;
 }
 .strong{
     color: rgb(36, 100, 148);
 }
-.titulo{
-    font-family: 'Ramabhadra', sans-serif;
-}
 .subtitulo{
-    margin-top: 43%;
+    margin-top: 3rem;
 }
 .subtitulo h2{
     font-family: 'Ramabhadra', sans-serif;
@@ -180,8 +188,13 @@ nav{
     text-decoration: none;
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 5%;
+    padding: 1em 2em;
     font-size: 15px;
+    border-radius: 3px;
+    margin: 1em auto;
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
 }
 .botones a:hover{
     background-color: rgb(36, 100, 148);
@@ -198,7 +211,50 @@ nav{
 }
 
 
-/* dispositivo pequeño */
+
+
+@media (min-width: 576px) {
+    .dispositivos {
+        text-align: left;
+    }
+    .dispositivos img {
+        width: 50%;
+        margin-left: 50%;
+    }
+    .video,video {
+        height: 320px;
+    }
+    .video h1 {
+        text-align: left;
+        padding-left: 5%;
+    }
+    .botones a {
+        min-width: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .video,video {
+        height: 440px;
+    }
+    .dispositivos img {
+        max-width: 100%;
+    }
+    .video h1 {
+        top: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .dispositivos {
+        bottom: -30%;
+    }
+    .subtitulo {
+        margin-top: 5rem;
+    }
+}
+
+/* dispositivo pequeño
 @media(max-width: 480px){
     .header a{
         margin-left: 35%;
@@ -226,3 +282,4 @@ nav{
         margin-top: 15%;
     }
 }
+ */
